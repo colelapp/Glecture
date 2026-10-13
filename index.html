@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class="header">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <nav class="nav-bar">
-        <div class="row">
-          <img src="Omnifood Contents/logo-white.png">
-
-            <ul class="navigation"> 
-            </ul>
-        </div>
-    </nav>
-
-    <div class="hero-text-box">
-        <h1> Goodbye junk food. <br> Hello super healthy meals.</h1>
-        <br>
-        <a href="#" class="btn btn-full">I'm hungry</a>
-        <a href="#" class="btn btn-ghost">Show me more</a>
-
         <style>
             *{
                 margin: 0;
@@ -36,19 +21,96 @@
             }
             .header{
                 background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('img/hero.jpg');
+                url('Omnifood Contents/hero.jpg');
                 background-size: cover;
                 height: 100vh;
                 background-attachment: fixed;
+                position: relative;
             }
             .row{
-                max-width: 1140;
+                max-width: 1140px;
                 margin: 0 auto;
             } 
+            .logo{
+                height: 100px;
+                width: auto;
+            }
+            .nav-bar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
+            .navigation{
+                list-style: none;
+                display: flex;
+                gap: 30px;
+            }
+            .navigation li a{
+                color: white;
+                text-decoration: none;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 5px;
+            }
+            .navigation li a:hover{
+                border-bottom: 2px solid #e67e22;
+            }
+            .hero-text-box{
+                width: 1140px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+            }
+            .hero-text-box h1{
+                font-size: 240%;
+                font-weight: 300;
+                text-transform: uppercase;
+                word-spacing: 4px;
+            }
+            .btn{
+                display: inline-block;
+                padding: 10px 30px;
+                border-radius: 200px;
+                text-decoration: none;
+                margin-right: 15px;
+                font-size: 90%;
+            }
+            .btn-full{
+                background-color: #e67e22;
+                color: white;
+            }
+            .btn-ghost{
+                border: 2px solid #e67e22;
+                color: #e67e22;
+            }
         </style>
 </head>
 <body>
-    
+    <header class="header">
+    <nav class="nav-bar">
+        <div class="row">
+          <img src="Omnifood Contents/logo-white.png" class="logo">
+
+            <ul class="navigation"> 
+                <li><a href="#">Food delivery</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Our cities</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-text-box">
+        <h1> Goodbye junk food. <br> Hello super healthy meals.</h1>
+        <br>
+        <a href="#" class="btn btn-full">I'm hungry</a>
+        <a href="#" class="btn btn-ghost">Show me more</a>
+    </div>
+
+    </header>
 </body>
 </html>
 
