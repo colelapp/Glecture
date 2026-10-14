@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <style>
             *{
                 margin: 0;
@@ -16,9 +18,7 @@
                 font-size: 20px;
                 text-rendering:optimizeLegibility;
             }
-            body{
-                background-color: black;
-            }
+        
             .header{
                 background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                 url('Omnifood Contents/hero.jpg');
@@ -86,6 +86,65 @@
                 border: 2px solid #e67e22;
                 color: #e67e22;
             }
+            .feature{
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 1.3;
+                letter-spacing: 1px;
+                color: #777;
+                text-align: center;
+                margin-top: 100px;
+            }
+            .feature h1::after{
+                content: "";
+                display: block;
+                width: 110px;
+                height: 2px;
+                background-color: #f39a53;
+                margin: 15px auto 0; 
+                margin-bottom: 20px;
+            }
+            .intro{
+                text-align: center;
+                margin: 0 auto 52px;
+                max-width: 850px;
+            }
+            .features{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 30px;
+                max-width: 1800px;
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+            .feature-item{
+                flex: 1;
+                min-width: 0;
+            }
+            .feature-item h3{
+                font-size: 35px;
+                font-weight: 300;
+                margin-bottom: 15px;
+            }
+            .feature-item p {
+                font-size: 20px;
+                line-height: 1.6;
+                font-weight: 300;
+                letter-spacing: 0;
+            }
+            .icon-feature{
+                font-size: 60px;
+                color: #e67e22;
+            }
+            .footer{
+                background-color: #4db6ac;
+                height: 12px;
+                width: 100%;
+                margin-top: 60px;
+            }
+
+            
         </style>
 </head>
 <body>
@@ -108,9 +167,70 @@
         <br>
         <a href="#" class="btn btn-full">I'm hungry</a>
         <a href="#" class="btn btn-ghost">Show me more</a>
-    </div>
-
     </header>
+`
+
+    <div class="feature">
+            <h1>GET FOOD FAST &mdash; NOT FAST FOOD</h1>
+            </div>
+   
+
+    <p class="intro">
+        Hello, we're Omnifood, your new premium food delivery service.
+        We know you're always busy. No time forcooking. So let us take
+        care of that, we're really good at it, we promise!
+    </p>
+    <div class="features">
+
+
+<div class="feature-item">
+    <ion-icon name="calendar-outline" class="icon-feature"></ion-icon>
+    <h3> UP TO 365 DAYS/YEAR</h3>
+    <p>
+         Never cook again! We really mean that. Our subscription
+        plans include up to 365 days/year coverage. You can also
+        choose to order more flexibly if that's your style.
+    </p>
+</div>
+  
+<div class="feature-item">
+    <ion-icon name="timer-outline" class="icon-feature"></ion-icon>
+    <h3> READY IN 20 MINUTES</h3>
+    <p>
+        You're only twenty minutes away from your delicious and
+        super healthy meals delivered right to your home. We work
+        with the best chefs in each town to ensure that you're
+        100% happy.
+    </p>
+</div>
+ 
+<div class="feature-item">
+    <ion-icon name="leaf-outline" class="icon-feature"></ion-icon>
+    <h3>100% ORGANIC</h3>
+    
+    <p>
+         All our vegetables are fresh, organic and local. Animals
+        are raised without added hormones or antibiotics. Good
+        for your health, the environment, and it also tastes better!
+    </p>
+</div>
+  
+
+
+<div class="feature-item">
+    <ion-icon name="checkmark-done-outline" class="icon-feature"></ion-icon>
+    <h3>ORDER ANYTHING</h3>
+    <p>
+         We don't limit your creativity, which means you can order
+        whatever you feel like. You can also choose from our menu
+        containing over 100 delicious meals. It's up to you!
+    </p>
+    </div>
+    </div>
+<div>
+    <footer class ="footer"></footer>
+
+  
 </body>
 </html>
 
