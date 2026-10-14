@@ -143,6 +143,33 @@
                 width: 100%;
                 margin-top: 60px;
             }
+            .favmeals{
+                font-size: 30px;
+                margin-left: 65px;
+                color: #e67e22;
+            }
+            .meal-gallery{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                background-color: black;
+                
+                
+            }
+            .meal-gallery img{
+                width: 100%;
+                overflow: hidden;
+                transform: scale(1);
+                transition: transform 0.5s,opacity 0.5s;
+                opacity: .7;
+                height: auto;
+                
+                
+                
+            }
+            .meal-gallery img:hover{
+                opacity: 1;
+                transform: scale(.85);
+            }
 
             
         </style>
@@ -228,6 +255,25 @@
     </div>
     </div>
 <div>
+
+
+    <div class="favmeals">
+        <h1>Favorite meals</h1>
+    </div>
+
+
+
+    <div class="meal-gallery">
+        <img src ="Omnifood Contents/1.jpg">
+        <img src ="Omnifood Contents/2.jpg">
+        <img src ="Omnifood Contents/3.jpg">
+        <img src ="Omnifood Contents/4.jpg">
+        <img src ="Omnifood Contents/5.jpg">
+        <img src ="Omnifood Contents/6.jpg">
+        <img src ="Omnifood Contents/7.jpg">
+        <img src ="Omnifood Contents/8.jpg">
+    </div>
+</div>
     <footer class ="footer"></footer>
 
   
