@@ -3,13 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+
+    <title>Sign up</title>
+    
+<style>
+
+/* testimonial part */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+    
+.image-container{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('Omnifood Contents/back-customers.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    padding: 60px 0;
+
+}
+
+
+.image-container img{
+    display: block;
+    position: relative;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.testimonies{
+   display: flex;
+   justify-content: space-between;
+   position: absolute;
+   width: 80%;
+   gap: 40px;
+   bottom: 150px;
+   left: 10%;
+   margin: auto;
+}
+
+.test1{
+    color: white;
+    width: 32%;
+}
+
+.test2{
+    color: white;
+    width: 32%;
+}
+
+.test3{
+    color: white;
+    width: 32%;
+}
+
+
+h2{
+    color: white;
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 60px auto;
+    width: 100%;
+}
+
+
+blockquote:before{
+    color: white;
+    content: "\201c";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+}
+
+cite{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 2%;
+    align-items: center;
+    color: white;
+    font-style: italic;
+}
+
+.turk{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.orange{
+    background-color: orange;
+    margin: 20px auto;
+    width: 100px;
+    height: 2px;
+}
+
+
+/* sign up part */
+
+.bg{
+    background-color: #F4F4F4;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 28px;
+}
+
+.swag1{
+    color: black;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 25px auto;
+}
+
+.options{
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
+   gap: 40px;
+   margin-top: 35px;
+   margin-left: 120px;
+   
+
+}
+
+.option1{
+    margin-top: 10px;
+    box-shadow: 0 2px 2px #cac5c5;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.option2{
+    margin-top: 10px;
+    box-shadow: 0 2px 2px #cac5c5;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.option3{
+    margin-top: 10px;
+    box-shadow: 0 2px 2px #cac5c5;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+
+.option1 h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 25px 15px 12px 15px;
+}
+
+.option2 h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 25px 15px 12px 15px;
+}
+
+.option3 h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 25px 15px 12px 15px;
+}
+
+.option1 li{
+    padding: 3px 20px; 
+    color: black;
+    list-style: none; 
+    
+}
+
+.option2 li{
+    padding: 3px 20px; 
+    color: black;
+    list-style: none; 
+}
+
+.option3 li{
+    padding: 3px 20px; 
+    color: black;
+    list-style: none; 
+}
+
+.checkmark{
+    color: orange;
+    margin-right: 5px;
+}
+
+.only{
+    color: black;
+    font-size: 80%; 
+    font-weight: 300;
+    margin: 5px 15px 12px 15px;
+    height: 20px;
+}
+
+.price{
+    display: flex;
+    align-items: baseline;
+    padding: 0 15px;
+    gap: 8px;
+}
+
+.month{
+    color: orange;
+}
+
+.num{
+    color: orange;
+    font-size: 300%; 
+    font-weight: 100;
+}
+
+.signup{
+    display: block;
+    border: 2px solid orange;
+    color: orange;
+    border-radius: 25px;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    margin: 14px auto;
+    text-decoration: none;
+}
+
+.signup:hover{
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+
+.line{
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 10px;
+}
+
             html{
                 color: #555;
                 font-family: sans-serif;
@@ -314,12 +574,146 @@
                 width: 100%;
                 bottom: 0;
                 
-        }
+        }  
 
-            
-        </style>
+    </style>
+    
 </head>
 <body>
+    <section class="test">
+    <div class="image-container">
+        
+        <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
+        <div class="orange"></div>
+
+        <div class="testimonies">
+
+        <div class="test1">
+        
+        <blockquote>
+            Omnifood is just awesome! I just launched a startup 
+            which leabed me with no time for cooking, so Omnifood 
+            is a life-saver. Now that i got used to it, I couldnt 
+            live without my daily meals
+        </blockquote>
+        <cite>
+            <img class="turk" src="Omnifood Contents/customer-1.jpg" alt="">
+            Alberto Dunan
+        </cite>
+
+        </div>
+
+        <div class="test2">
+        
+        <blockquote>
+            Inexpensive, healthy and great-tasting meals, 
+            delivered right to my home. We have lots of 
+            food delivery here in Lisbon, but no one 
+            comes even close to omifood. Me and my 
+            family are so in love!
+        </blockquote>
+        <cite>
+            <img class="turk" 
+            src="Omnifood Contents/customer-2.jpg"
+            alt="">
+            Joana Silva
+        </cite>
+
+        </div>
+
+        <div class="test3">
+        
+        <blockquote>
+            I was looking for a quick and easy food 
+            delivery service in San Franciso. I tried a lot 
+            of them and ended up with Omnifood. Best
+            food delivery service in the Bay Area. Keep
+            up the great work!
+        </blockquote>
+        <cite>
+            <img class="turk" src="Omnifood Contents/customer-3.jpg" alt="">
+            Milton Chapman
+        </cite>
+
+        </div>
+        
+        </div>
+    </div>
+    </section>
+
+    <section class="sign">
+        <div class="bg">
+            <div class="ik">
+            <h2 class="swag1">START EATING HEALTHY TODAY</h2>
+            <div class="orange"></div>
+            </div>
+
+    <div class="options">
+        <div class="option1">
+        <h3>PREMIUM</h3>
+
+        <div class="price">
+        <h1 class="num">$399</h1> 
+        <p class="month"> /month</p>
+        </div>
+
+        <p class="only">That's only 13.30$ per meal</p>
+        <div class="line"></div>
+
+        <li><span class="checkmark">✓</span>1 meal every day</li>
+        <li><span class="checkmark">✓</span>Order 24/7</li>
+        <li><span class="checkmark">✓</span> Access to newest creations</li>
+        <li><span class="checkmark">✓</span>Free delivery</li>
+        <div class="line"></div>
+
+        <a href="#" class="signup">Sign up now</a>
+        </div>
+
+        <div class="option2">
+        <h3>PRO</h3>
+
+        <div class="price">
+        <h1 class="num">$149</h1> 
+        <p class="month"> /month</p>
+        </div>
+
+        <p class="only">That's only 14.90 per meal</p>
+        <div class="line"></div>
+
+        <li><span class="checkmark">✓</span>1 meal 10 days/month</li>
+        <li><span class="checkmark">✓</span>Order 24/7</li>
+        <li><span class="checkmark">✓</span> Access to newest creations</li>
+        <li><span class="checkmark">✓</span>Free delivery</li>
+        <div class="line"></div>
+
+        <a href="#" class="signup">Sign up now</a>
+
+        </div>
+
+        <div class="option3">  
+        <h3>STARTER</h3>
+
+        <div class="price">
+        <h1 class="num">$19</h1> 
+        <p class="month"> /meal</p>
+        </div>
+        <p class="only"> </p>
+        <div class="line"></div>
+
+        <li><span class="checkmark">✓</span>1 meal</li>
+        <li><span class="checkmark">✓</span>Order 24/7</li>
+        <li><span class="checkmark">X</span></li>
+        <li><span class="checkmark">✓</span>Free delivery</li>
+        <div class="line"></div>
+
+        <a href="#" class="signup">Sign up now</a>
+
+        </div>
+
+            </div>
+
+        </div>
+    </section>
     <header class="header">
     <nav class="nav-bar">
         <div class="row">
@@ -548,9 +942,143 @@
         </div>     
     </div>
 </section>
+     
+      
+          <section class="test">
+    <div class="image-container">
+        
+        <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
+        <div class="orange"></div>
+
+        <div class="testimonies">
+
+        <div class="test1">
+        
+        <blockquote>
+            Omnifood is just awesome! I just launched a startup 
+            which leabed me with no time for cooking, so Omnifood 
+            is a life-saver. Now that i got used to it, I couldnt 
+            live without my daily meals
+        </blockquote>
+        <cite>
+            <img class="turk" src="Omnifood Contents/customer-1.jpg" alt="">
+            Alberto Dunan
+        </cite>
+
+        </div>
+
+        <div class="test2">
+        
+        <blockquote>
+            Inexpensive, healthy and great-tasting meals, 
+            delivered right to my home. We have lots of 
+            food delivery here in Lisbon, but no one 
+            comes even close to omifood. Me and my 
+            family are so in love!
+        </blockquote>
+        <cite>
+            <img class="turk" 
+            src="Omnifood Contents/customer-2.jpg"
+            alt="">
+            Joana Silva
+        </cite>
+
+        </div>
+
+        <div class="test3">
+        
+        <blockquote>
+            I was looking for a quick and easy food 
+            delivery service in San Franciso. I tried a lot 
+            of them and ended up with Omnifood. Best
+            food delivery service in the Bay Area. Keep
+            up the great work!
+        </blockquote>
+        <cite>
+            <img class="turk" src="Omnifood Contents/customer-3.jpg" alt="">
+            Milton Chapman
+        </cite>
+
+        </div>
+        
+        </div>
+    </div>
+    </section>
+
+    <section class="sign">
+        <div class="bg">
+            <div class="ik">
+            <h2 class="swag1">START EATING HEALTHY TODAY</h2>
+            <div class="orange"></div>
+            </div>
+
+    <div class="options">
+        <div class="option1">
+        <h3>PREMIUM</h3>
+
+        <div class="price">
+        <h1 class="num">$399</h1> 
+        <p class="month"> /month</p>
+        </div>
+
+        <p class="only">That's only 13.30$ per meal</p>
+        <div class="line"></div>
+
+        <li><span class="checkmark">✓</span>1 meal every day</li>
+        <li><span class="checkmark">✓</span>Order 24/7</li>
+        <li><span class="checkmark">✓</span> Access to newest creations</li>
+        <li><span class="checkmark">✓</span>Free delivery</li>
+        <div class="line"></div>
+
+        <a href="#" class="signup">Sign up now</a>
+        </div>
+
+        <div class="option2">
+        <h3>PRO</h3>
+
+        <div class="price">
+        <h1 class="num">$149</h1> 
+        <p class="month"> /month</p>
+        </div>
+
+        <p class="only">That's only 14.90 per meal</p>
+        <div class="line"></div>
+
+        <li><span class="checkmark">✓</span>1 meal 10 days/month</li>
+        <li><span class="checkmark">✓</span>Order 24/7</li>
+        <li><span class="checkmark">✓</span> Access to newest creations</li>
+        <li><span class="checkmark">✓</span>Free delivery</li>
+        <div class="line"></div>
+
+        <a href="#" class="signup">Sign up now</a>
+
+        </div>
+
+        <div class="option3">  
+        <h3>STARTER</h3>
+
+        <div class="price">
+        <h1 class="num">$19</h1> 
+        <p class="month"> /meal</p>
+        </div>
+        <p class="only"> </p>
+        <div class="line"></div>
+
+        <li><span class="checkmark">✓</span>1 meal</li>
+        <li><span class="checkmark">✓</span>Order 24/7</li>
+        <li><span class="checkmark">X</span></li>
+        <li><span class="checkmark">✓</span>Free delivery</li>
+        <div class="line"></div>
+
+        <a href="#" class="signup">Sign up now</a>
+
+        </div>
+
+            </div>
+
+        </div>
+    </section>
     <footer class ="footer"></footer>
-
-
     </footer>
 
   
