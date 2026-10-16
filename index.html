@@ -143,6 +143,179 @@
                 width: 100%;
                 margin-top: 60px;
             }
+            .favmeals{
+                font-size: 30px;
+                margin-left: 65px;
+                color: #e67e22;
+            }
+            .meal-gallery{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                background-color: black;
+                
+                
+            }
+            .meal-gallery img{
+                width: 100%;
+                overflow: hidden;
+                transform: scale(1);
+                transition: transform 0.5s,opacity 0.5s;
+                opacity: .7;
+                height: auto;
+                
+            }
+            .meal-gallery img:hover{
+                opacity: 1;
+                transform: scale(.85);
+            }
+               * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 1.3;
+            letter-spacing: 1px;
+            color: #777;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .title h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: #f39a53;
+            margin: 15px auto 0;
+            margin-bottom: 20px;
+        }
+
+        .phone img {
+            width: auto;
+            height: 500px;
+
+        }
+
+        .step {
+            display: flex;
+            gap: 70px;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            font-size: 25px;
+            line-height: 1.6;
+            color: #f39a53;
+            max-width: 400px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
+        .step p {
+            font-size: 30px;
+            line-height: 1.6;
+            color: #666;
+
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .steps {
+            float: left;
+            width: 60%;
+            padding: 10px;
+            margin-top: 40px;
+            padding-right: 40px;
+
+        }
+
+        .phone {
+            float: left;
+            width: 40%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .buttons img {
+            height: 50px;
+            width: auto;
+            margin-right:10px;
+        }
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .titles{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-top: 100px;
+            color: #777;
+        }
+        .title-line{
+            width: 110px;
+            height: 3px;
+            background-color: #e67e22;
+            margin: 28px auto 50px;
+        }
+        .cities{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            gap: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        .city{
+            flex: 1;
+            min-width: 0;
+        }
+        .city img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .city h3{
+            color: #777;
+            margin: 15px 0;;
+            font-size: 30px;
+        }
+        .city-info{
+            align-items: center;
+            gap: 10px;
+            font-size: 25px;
+            color: #777;
+        }
+        .info-row{
+            display: flex;
+            align-items: center;
+            gap: 10px ;
+        }
+        .info-row ion-icon{
+            color: #e67e22;
+        }
+        .info-row a{
+            color: #e67e22;
+        }
+        .footer{
+                background-color: #4db6ac;
+                height: 15px;
+                width: 100%;
+                bottom: 0;
+                
+        }
 
             
         </style>
@@ -228,6 +401,154 @@
     </div>
     </div>
 <div>
+
+
+    <div class="favmeals">
+        <h1>Favorite meals</h1>
+    </div>
+
+
+
+    <div class="meal-gallery">
+        <img src ="Omnifood Contents/1.jpg">
+        <img src ="Omnifood Contents/2.jpg">
+        <img src ="Omnifood Contents/3.jpg">
+        <img src ="Omnifood Contents/4.jpg">
+        <img src ="Omnifood Contents/5.jpg">
+        <img src ="Omnifood Contents/6.jpg">
+        <img src ="Omnifood Contents/7.jpg">
+        <img src ="Omnifood Contents/8.jpg">
+    </div>
+</div>
+
+<div class="title">
+        <h1>HOW IT WORKS &mdash; SIMPLE AS 1, 2, 3</h1>
+    </div>
+    <div class="row">
+        <div class="phone">
+            <img src="Omnifood Contents/app-iPhone.png" alt="phone">
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number circle">1</div>
+                <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+            </div>
+
+            <div class="buttons">
+                <img src="Omnifood Contents/download-app-android.png">
+                <img src="Omnifood Contents/download-app.svg">
+
+            </div>
+        </div>
+    </div>
+    <section class="cities-section">
+    <div class="titles">
+        <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
+    </div>
+<div class="title-line"></div>
+        <div class="cities">
+        <div class="city">
+             <img src="Omnifood Contents/lisbon-3.jpg">
+        <h3>LISBON</h3>
+        
+        <div class="city-info">
+            <div class="info-row">
+                <ion-icon name="person"></ion-icon>
+                <div>1600+ happy eaters</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="star"></ion-icon>
+                <div>60+ top chefs</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <a href="#">@omnifood_1x</a>
+            </div>
+        </div>     
+    </div>
+
+            <div class="city">
+             <img src="Omnifood Contents/san-francisco.jpg">
+        <h3>SAN FRANCISCO</h3>
+        
+        <div class="city-info">
+            <div class="info-row">
+                <ion-icon name="person"></ion-icon>
+                <div>3700+ happy eaters</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="star"></ion-icon>
+                <div>160+ top chefs</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <a href="#">@omnifood_1x</a>
+            </div>
+        
+        </div>     
+    </div>
+
+
+            <div class="city">
+             <img src="Omnifood Contents/berlin.jpg">
+            <h3>BERLIN</h3>
+     
+        <div class="city-info">
+            <div class="info-row">
+                <ion-icon name="person"></ion-icon>
+                <div>2300+ happy eaters</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="star"></ion-icon>
+                <div>110+ top chefs</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <a href="#">@omnifood_1x</a>
+            </div>
+        </div>     
+    </div>
+
+
+            <div class="city">
+             <img src="Omnifood Contents/london.jpg">
+            <h3>LONDON</h3>
+       
+        <div class="city-info">
+            <div class="info-row">
+                <ion-icon name="person"></ion-icon>
+                <div>1200+ happy eaters</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="star"></ion-icon>
+                <div>50+ top chefs</div>
+            </div>
+
+            <div class="info-row">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <a href="#">@omnifood_1x</a>
+                </div>
+            </div>
+        </div>     
+    </div>
+</section>
     <footer class ="footer"></footer>
 
   
