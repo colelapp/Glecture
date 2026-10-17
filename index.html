@@ -1,433 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sign up</title>
-    
-<style>
 
-/* testimonial part */
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.0/ionicons.min.css">
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+    <style>
+        /* testimonial part */
 
-    
-.image-container{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('Omnifood Contents/back-customers.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    width: 100%;
-    display: block;
-    height: 100vh;
-    padding: 60px 0;
-
-}
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
 
 
-.image-container img{
-    display: block;
-    position: relative;
-}
+        .image-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('Omnifood Contents/back-customers.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            width: 100%;
+            display: block;
+            height: 100vh;
+            padding: 60px 0;
 
-blockquote{
-    padding: 2%;
-    font-style: italic;
-    line-height: 145%;
-    position: relative;
-    margin-bottom: 25px;
-}
-
-.testimonies{
-   display: flex;
-   justify-content: space-between;
-   position: absolute;
-   width: 80%;
-   gap: 40px;
-   bottom: 150px;
-   left: 10%;
-   margin: auto;
-}
-
-.test1{
-    color: white;
-    width: 32%;
-}
-
-.test2{
-    color: white;
-    width: 32%;
-}
-
-.test3{
-    color: white;
-    width: 32%;
-}
+        }
 
 
-h2{
-    color: white;
-    font-size: 42px;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto 60px auto;
-    width: 100%;
-}
+        .image-container img {
+            display: block;
+            position: relative;
+        }
+
+        blockquote {
+            padding: 2%;
+            font-style: italic;
+            line-height: 145%;
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .testimonies {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 80%;
+            gap: 40px;
+            bottom: 150px;
+            left: 10%;
+            margin: auto;
+        }
+
+        .test1 {
+            color: white;
+            width: 32%;
+        }
+
+        .test2 {
+            color: white;
+            width: 32%;
+        }
+
+        .test3 {
+            color: white;
+            width: 32%;
+        }
 
 
-blockquote:before{
-    color: white;
-    content: "\201c";
-    font-size: 500%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -10px;
-}
-
-cite{
-    display: flex;
-    margin-top: 20px;
-    padding-left: 2%;
-    align-items: center;
-    color: white;
-    font-style: italic;
-}
-
-.turk{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 10px;
-    flex-shrink: 0;
-}
-
-.orange{
-    background-color: orange;
-    margin: 20px auto;
-    width: 100px;
-    height: 2px;
-}
+        h2 {
+            color: white;
+            font-size: 42px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 auto 60px auto;
+            width: 100%;
+        }
 
 
-/* sign up part */
+        blockquote:before {
+            color: white;
+            content: "\201c";
+            font-size: 500%;
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: -10px;
+        }
 
-.bg{
-    background-color: #F4F4F4;
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 28px;
-}
+        cite {
+            display: flex;
+            margin-top: 20px;
+            padding-left: 2%;
+            align-items: center;
+            color: white;
+            font-style: italic;
+        }
 
-.swag1{
-    color: black;
-    font-size: 34px;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto 25px auto;
-}
+        .turk {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
 
-.options{
-   display: flex;
-   justify-content: space-between;
-   width: 80%;
-   gap: 40px;
-   margin-top: 35px;
-   margin-left: 120px;
-   
-
-}
-
-.option1{
-    margin-top: 10px;
-    box-shadow: 0 2px 2px #cac5c5;
-    width: 300px;
-    height: 350px;
-    background-color: white;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-}
-
-.option2{
-    margin-top: 10px;
-    box-shadow: 0 2px 2px #cac5c5;
-    width: 300px;
-    height: 350px;
-    background-color: white;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-}
-
-.option3{
-    margin-top: 10px;
-    box-shadow: 0 2px 2px #cac5c5;
-    width: 300px;
-    height: 350px;
-    background-color: white;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-}
+        .orange {
+            background-color: orange;
+            margin: 20px auto;
+            width: 100px;
+            height: 2px;
+        }
 
 
-.option1 h3{
-    color: black;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 25px 15px 12px 15px;
-}
+        /* sign up part */
 
-.option2 h3{
-    color: black;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 25px 15px 12px 15px;
-}
+        .bg {
+            background-color: #F4F4F4;
+            width: 100%;
+            min-height: 100vh;
+            padding-top: 28px;
+        }
 
-.option3 h3{
-    color: black;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 25px 15px 12px 15px;
-}
+        .swag1 {
+            color: black;
+            font-size: 34px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 auto 25px auto;
+        }
 
-.option1 li{
-    padding: 3px 20px; 
-    color: black;
-    list-style: none; 
-    
-}
+        .options {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            gap: 40px;
+            margin-top: 35px;
+            margin-left: 120px;
 
-.option2 li{
-    padding: 3px 20px; 
-    color: black;
-    list-style: none; 
-}
 
-.option3 li{
-    padding: 3px 20px; 
-    color: black;
-    list-style: none; 
-}
+        }
 
-.checkmark{
-    color: orange;
-    margin-right: 5px;
-}
+        .option1 {
+            margin-top: 10px;
+            box-shadow: 0 2px 2px #cac5c5;
+            width: 30%;
+            height: 375px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
 
-.only{
-    color: black;
-    font-size: 80%; 
-    font-weight: 300;
-    margin: 5px 15px 12px 15px;
-    height: 20px;
-}
+        .option2 {
+            margin-top: 10px;
+            box-shadow: 0 2px 2px #cac5c5;
+            width: 30%;
+            height: 375px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
 
-.price{
-    display: flex;
-    align-items: baseline;
-    padding: 0 15px;
-    gap: 8px;
-}
+        .option3 {
+            margin-top: 10px;
+            box-shadow: 0 2px 2px #cac5c5;
+            width: 30%;
+            height: 375px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
 
-.month{
-    color: orange;
-}
 
-.num{
-    color: orange;
-    font-size: 300%; 
-    font-weight: 100;
-}
+        .option1 h3 {
+            color: black;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 25px 15px 12px 15px;
+        }
 
-.signup{
-    display: block;
-    border: 2px solid orange;
-    color: orange;
-    border-radius: 25px;
-    text-align: center;
-    width: 150px;
-    padding: 10px;
-    margin: 14px auto;
-    text-decoration: none;
-}
+        .option2 h3 {
+            color: black;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 25px 15px 12px 15px;
+        }
 
-.signup:hover{
-    background-color: orange;
-    color: white;
-    border-color: orange;
-}
+        .option3 h3 {
+            color: black;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 25px 15px 12px 15px;
+        }
 
-.line{
-    border-bottom: 1px solid #e8e8e8;
-    margin-top: 10px;
-}
+        .option1 li {
+            padding: 3px 20px;
+            color: black;
+            list-style: none;
+            font-size: 20px;
+        }
 
-            html{
-                color: #555;
-                font-family: sans-serif;
-                font-weight: 300;
-                font-size: 20px;
-                text-rendering:optimizeLegibility;
-            }
-        
-            .header{
-                background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        .option2 li {
+            padding: 3px 20px;
+            color: black;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        .option3 li {
+            padding: 3px 20px;
+            color: black;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        .checkmark {
+            color: orange;
+            margin-right: 5px;
+        }
+
+        .only {
+            color: black;
+            font-size: 80%;
+            font-weight: 300;
+            margin: 5px 15px 12px 15px;
+            height: 20px;
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            padding: 0 15px;
+            gap: 8px;
+        }
+
+        .month {
+            color: orange;
+        }
+
+        .num {
+            color: orange;
+            font-size: 300%;
+            font-weight: 100;
+        }
+
+        .signup {
+            display: block;
+            border: 2px solid orange;
+            color: orange;
+            border-radius: 25px;
+            text-align: center;
+            width: 150px;
+            padding: 10px;
+            margin: 14px auto;
+            text-decoration: none;
+        }
+
+        .signup:hover {
+            background-color: orange;
+            color: white;
+            border-color: orange;
+        }
+
+        .line {
+            border-bottom: 1px solid #e8e8e8;
+            margin-top: 10px;
+        }
+
+        html {
+            color: #555;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            text-rendering: optimizeLegibility;
+        }
+
+        .header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                 url('Omnifood Contents/hero.jpg');
-                background-size: cover;
-                height: 100vh;
-                background-attachment: fixed;
-                position: relative;
-            }
-            .row{
-                max-width: 1140px;
-                margin: 0 auto;
-            } 
-            .logo{
-                height: 100px;
-                width: auto;
-            }
-            .nav-bar{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px;
-            }
-            .navigation{
-                list-style: none;
-                display: flex;
-                gap: 30px;
-            }
-            .navigation li a{
-                color: white;
-                text-decoration: none;
-                border-bottom: 2px solid transparent;
-                padding-bottom: 5px;
-            }
-            .navigation li a:hover{
-                border-bottom: 2px solid #e67e22;
-            }
-            .hero-text-box{
-                width: 1140px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                text-align: center;
-            }
-            .hero-text-box h1{
-                font-size: 240%;
-                font-weight: 300;
-                text-transform: uppercase;
-                word-spacing: 4px;
-            }
-            .btn{
-                display: inline-block;
-                padding: 10px 30px;
-                border-radius: 200px;
-                text-decoration: none;
-                margin-right: 15px;
-                font-size: 90%;
-            }
-            .btn-full{
-                background-color: #e67e22;
-                color: white;
-            }
-            .btn-ghost{
-                border: 2px solid #e67e22;
-                color: #e67e22;
-            }
-            .feature{
-                font-size: 20px;
-                font-weight: 300;
-                line-height: 1.3;
-                letter-spacing: 1px;
-                color: #777;
-                text-align: center;
-                margin-top: 100px;
-            }
-            .feature h1::after{
-                content: "";
-                display: block;
-                width: 110px;
-                height: 2px;
-                background-color: #f39a53;
-                margin: 15px auto 0; 
-                margin-bottom: 20px;
-            }
-            .intro{
-                text-align: center;
-                margin: 0 auto 52px;
-                max-width: 850px;
-            }
-            .features{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 30px;
-                max-width: 1800px;
-                margin: 40px auto;
-                padding: 0 20px;
-            }
-            .feature-item{
-                flex: 1;
-                min-width: 0;
-            }
-            .feature-item h3{
-                font-size: 35px;
-                font-weight: 300;
-                margin-bottom: 15px;
-            }
-            .feature-item p {
-                font-size: 20px;
-                line-height: 1.6;
-                font-weight: 300;
-                letter-spacing: 0;
-            }
-            .icon-feature{
-                font-size: 60px;
-                color: #e67e22;
-            }
-            .footer{
-                background-color: #4db6ac;
-                height: 12px;
-                width: 100%;
-                margin-top: 60px;
-            }
-            .favmeals{
-                font-size: 30px;
-                margin-left: 65px;
-                color: #e67e22;
-            }
-            .meal-gallery{
-                display: grid;
-                grid-template-columns: repeat(4,1fr);
-                background-color: black;
-                
-                
-            }
-            .meal-gallery img{
-                width: 100%;
-                overflow: hidden;
-                transform: scale(1);
-                transition: transform 0.5s,opacity 0.5s;
-                opacity: .7;
-                height: auto;
-                
-            }
-            .meal-gallery img:hover{
-                opacity: 1;
-                transform: scale(.85);
-            }
-               * {
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .row {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 100px;
+            width: auto;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .navigation {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .navigation li a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 5px;
+        }
+
+        .navigation li a:hover {
+            border-bottom: 2px solid #e67e22;
+        }
+
+        .hero-text-box {
+            width: 1140px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-text-box h1 {
+            font-size: 240%;
+            font-weight: 300;
+            text-transform: uppercase;
+            word-spacing: 4px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 200px;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 90%;
+        }
+
+        .btn-full {
+            background-color: #e67e22;
+            color: white;
+        }
+
+        .btn-ghost {
+            border: 2px solid #e67e22;
+            color: #e67e22;
+        }
+
+        .feature {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.3;
+            letter-spacing: 1px;
+            color: #777;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .feature h1::after {
+            content: "";
+            display: block;
+            width: 110px;
+            height: 2px;
+            background-color: #f39a53;
+            margin: 15px auto 0;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin: 0 auto 52px;
+            max-width: 850px;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+            max-width: 1800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .feature-item h3 {
+            font-size: 35px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 300;
+            letter-spacing: 0;
+        }
+
+        .icon-feature {
+            font-size: 60px;
+            color: #e67e22;
+        }
+
+        .favmeals {
+            font-size: 30px;
+            margin-left: 65px;
+            color: #e67e22;
+        }
+
+        .meal-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: black;
+
+
+        }
+
+        .meal-gallery img {
+            width: 100%;
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform 0.5s, opacity 0.5s;
+            opacity: .7;
+            height: auto;
+
+        }
+
+        .meal-gallery img:hover {
+            opacity: 1;
+            transform: scale(.85);
+        }
+
+        * {
             box-sizing: border-box;
             padding: 0;
             margin: 0;
@@ -471,8 +493,8 @@ cite{
             line-height: 1.6;
             color: #f39a53;
             max-width: 400px;
-            margin-top:auto;
-            margin-bottom:auto;
+            margin-top: auto;
+            margin-bottom: auto;
         }
 
         .step p {
@@ -507,14 +529,16 @@ cite{
         .buttons img {
             height: 50px;
             width: auto;
-            margin-right:10px;
+            margin-right: 10px;
         }
-          *{
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .titles{
+
+        .titles {
             text-align: center;
             font-size: 32px;
             font-weight: 300;
@@ -522,87 +546,214 @@ cite{
             margin-top: 100px;
             color: #777;
         }
-        .title-line{
+
+        .title-line {
             width: 110px;
             height: 3px;
             background-color: #e67e22;
             margin: 28px auto 50px;
         }
-        .cities{
+
+        .cities {
             display: flex;
             justify-content: space-between;
             margin: 0 auto;
             gap: 20px;
             margin-left: 10px;
             margin-right: 10px;
-            
+
         }
-        .city{
+
+        .city {
             flex: 1;
             min-width: 0;
         }
-        .city img{
+
+        .city img {
             width: 100%;
             height: auto;
             display: block;
         }
-        .city h3{
+
+        .city h3 {
             color: #777;
-            margin: 15px 0;;
+            margin: 15px 0;
+            ;
             font-size: 30px;
         }
-        .city-info{
+
+        .city-info {
             align-items: center;
             gap: 10px;
             font-size: 25px;
             color: #777;
         }
-        .info-row{
+
+        .info-row {
             display: flex;
             align-items: center;
-            gap: 10px ;
+            gap: 10px;
         }
-        .info-row ion-icon{
+
+        .info-row ion-icon {
             color: #e67e22;
         }
-        .info-row a{
+
+        .info-row a {
             color: #e67e22;
         }
-        .footer{
-                background-color: #4db6ac;
-                height: 15px;
-                width: 100%;
-                bottom: 0;      
-        }  
+
+        footer {
+            background-color: #333;
+            padding: 50px;
+            font-size: 80%;
+        }
+
+        .footer-nav {
+            list-style: none;
+            float: left;
+        }
+
+        .social-links {
+            list-style: none;
+            float: right;
+        }
+
+        .footer-nav li,
+        .social-links li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .footer-nav li:last-child,
+        .social-links li:last-child {
+            margin-right: 0;
+        }
+
+        .footer-nav li a:link,
+        .footer-nav li a:visited,
+        .social-links li a:link,
+        .social-links li a:visited {
+            text-decoration: none;
+            border: 0;
+            color: #888;
+            transition: color 0.2s;
+        }
+
+        .footer-nav li a:hover,
+        .footer-nav li a:active {
+            color: #ddd;
+        }
+
+        .social-links li a:link,
+        .social-links li a:visited {
+            font-size: 160%;
+        }
+
+
+
+        ion-icon:hover {
+            color: #55acee;
+        }
+
+        footer p {
+            color: #888;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #777;
+            letter-spacing: 1px;
+        }
+
+        .orange-line {
+            width: 100px;
+            height: 2px;
+            background-color: #e67e22;
+            margin: 35px auto 50px;
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        label {
+            color: #888;
+            font-size: 18px;
+            padding-top: 5px;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 135px;
+            font-family: inherit;
+        }
+
+        button {
+            justify-self: start;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 14px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
     <header class="header">
-    <nav class="nav-bar">
-        <div class="row">
-          <img src="Omnifood Contents/logo-white.png" class="logo">
+        <nav class="nav-bar">
+            <div class="row">
+                <img src="Omnifood Contents/logo-white.png" class="logo">
 
-            <ul class="navigation"> 
-                <li><a href="#">Food delivery</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Our cities</a></li>
-                <li><a href="#">Sign up</a></li>
-            </ul>
-        </div>
-    </nav>
+                <ul class="navigation">
+                    <li><a href="#">Food delivery</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Our cities</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="hero-text-box">
-        <h1> Goodbye junk food. <br> Hello super healthy meals.</h1>
-        <br>
-        <a href="#" class="btn btn-full">I'm hungry</a>
-        <a href="#" class="btn btn-ghost">Show me more</a>
+        <div class="hero-text-box">
+            <h1> Goodbye junk food. <br> Hello super healthy meals.</h1>
+            <br>
+            <a href="#" class="btn btn-full">I'm hungry</a>
+            <a href="#" class="btn btn-ghost">Show me more</a>
     </header>
-`
+    `
 
     <div class="feature">
-            <h1>GET FOOD FAST &mdash; NOT FAST FOOD</h1>
-            </div>
-   
+        <h1>GET FOOD FAST &mdash; NOT FAST FOOD</h1>
+    </div>
+
 
     <p class="intro">
         Hello, we're Omnifood, your new premium food delivery service.
@@ -612,72 +763,72 @@ cite{
     <div class="features">
 
 
-<div class="feature-item">
-    <ion-icon name="calendar-outline" class="icon-feature"></ion-icon>
-    <h3> UP TO 365 DAYS/YEAR</h3>
-    <p>
-         Never cook again! We really mean that. Our subscription
-        plans include up to 365 days/year coverage. You can also
-        choose to order more flexibly if that's your style.
-    </p>
-</div>
-  
-<div class="feature-item">
-    <ion-icon name="timer-outline" class="icon-feature"></ion-icon>
-    <h3> READY IN 20 MINUTES</h3>
-    <p>
-        You're only twenty minutes away from your delicious and
-        super healthy meals delivered right to your home. We work
-        with the best chefs in each town to ensure that you're
-        100% happy.
-    </p>
-</div>
- 
-<div class="feature-item">
-    <ion-icon name="leaf-outline" class="icon-feature"></ion-icon>
-    <h3>100% ORGANIC</h3>
-    
-    <p>
-         All our vegetables are fresh, organic and local. Animals
-        are raised without added hormones or antibiotics. Good
-        for your health, the environment, and it also tastes better!
-    </p>
-</div>
-  
+        <div class="feature-item">
+            <ion-icon name="calendar-outline" class="icon-feature"></ion-icon>
+            <h3> UP TO 365 DAYS/YEAR</h3>
+            <p>
+                Never cook again! We really mean that. Our subscription
+                plans include up to 365 days/year coverage. You can also
+                choose to order more flexibly if that's your style.
+            </p>
+        </div>
+
+        <div class="feature-item">
+            <ion-icon name="timer-outline" class="icon-feature"></ion-icon>
+            <h3> READY IN 20 MINUTES</h3>
+            <p>
+                You're only twenty minutes away from your delicious and
+                super healthy meals delivered right to your home. We work
+                with the best chefs in each town to ensure that you're
+                100% happy.
+            </p>
+        </div>
+
+        <div class="feature-item">
+            <ion-icon name="leaf-outline" class="icon-feature"></ion-icon>
+            <h3>100% ORGANIC</h3>
+
+            <p>
+                All our vegetables are fresh, organic and local. Animals
+                are raised without added hormones or antibiotics. Good
+                for your health, the environment, and it also tastes better!
+            </p>
+        </div>
 
 
-<div class="feature-item">
-    <ion-icon name="checkmark-done-outline" class="icon-feature"></ion-icon>
-    <h3>ORDER ANYTHING</h3>
-    <p>
-         We don't limit your creativity, which means you can order
-        whatever you feel like. You can also choose from our menu
-        containing over 100 delicious meals. It's up to you!
-    </p>
+
+        <div class="feature-item">
+            <ion-icon name="checkmark-done-outline" class="icon-feature"></ion-icon>
+            <h3>ORDER ANYTHING</h3>
+            <p>
+                We don't limit your creativity, which means you can order
+                whatever you feel like. You can also choose from our menu
+                containing over 100 delicious meals. It's up to you!
+            </p>
+        </div>
     </div>
+    <div>
+
+
+        <div class="favmeals">
+            <h1>Favorite meals</h1>
+        </div>
+
+
+
+        <div class="meal-gallery">
+            <img src="Omnifood Contents/1.jpg">
+            <img src="Omnifood Contents/2.jpg">
+            <img src="Omnifood Contents/3.jpg">
+            <img src="Omnifood Contents/4.jpg">
+            <img src="Omnifood Contents/5.jpg">
+            <img src="Omnifood Contents/6.jpg">
+            <img src="Omnifood Contents/7.jpg">
+            <img src="Omnifood Contents/8.jpg">
+        </div>
     </div>
-<div>
 
-
-    <div class="favmeals">
-        <h1>Favorite meals</h1>
-    </div>
-
-
-
-    <div class="meal-gallery">
-        <img src ="Omnifood Contents/1.jpg">
-        <img src ="Omnifood Contents/2.jpg">
-        <img src ="Omnifood Contents/3.jpg">
-        <img src ="Omnifood Contents/4.jpg">
-        <img src ="Omnifood Contents/5.jpg">
-        <img src ="Omnifood Contents/6.jpg">
-        <img src ="Omnifood Contents/7.jpg">
-        <img src ="Omnifood Contents/8.jpg">
-    </div>
-</div>
-
-<div class="title">
+    <div class="title">
         <h1>HOW IT WORKS &mdash; SIMPLE AS 1, 2, 3</h1>
     </div>
     <div class="row">
@@ -708,242 +859,311 @@ cite{
         </div>
     </div>
     <section class="cities-section">
-    <div class="titles">
-        <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
-    </div>
-<div class="title-line"></div>
+        <div class="titles">
+            <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
+        </div>
+        <div class="title-line"></div>
         <div class="cities">
-        <div class="city">
-             <img src="Omnifood Contents/lisbon-3.jpg">
-        <h3>LISBON</h3>
-        
-        <div class="city-info">
-            <div class="info-row">
-                <ion-icon name="person"></ion-icon>
-                <div>1600+ happy eaters</div>
-            </div>
-
-            <div class="info-row">
-                <ion-icon name="star"></ion-icon>
-                <div>60+ top chefs</div>
-            </div>
-
-            <div class="info-row">
-                <ion-icon name="logo-twitter"></ion-icon>
-                <a href="#">@omnifood_1x</a>
-            </div>
-        </div>     
-    </div>
-
             <div class="city">
-             <img src="Omnifood Contents/san-francisco.jpg">
-        <h3>SAN FRANCISCO</h3>
-        
-        <div class="city-info">
-            <div class="info-row">
-                <ion-icon name="person"></ion-icon>
-                <div>3700+ happy eaters</div>
-            </div>
+                <img src="Omnifood Contents/lisbon-3.jpg">
+                <h3>LISBON</h3>
 
-            <div class="info-row">
-                <ion-icon name="star"></ion-icon>
-                <div>160+ top chefs</div>
-            </div>
+                <div class="city-info">
+                    <div class="info-row">
+                        <ion-icon name="person"></ion-icon>
+                        <div>1600+ happy eaters</div>
+                    </div>
 
-            <div class="info-row">
-                <ion-icon name="logo-twitter"></ion-icon>
-                <a href="#">@omnifood_1x</a>
-            </div>
-        
-        </div>     
-    </div>
+                    <div class="info-row">
+                        <ion-icon name="star"></ion-icon>
+                        <div>60+ top chefs</div>
+                    </div>
 
-
-            <div class="city">
-             <img src="Omnifood Contents/berlin.jpg">
-            <h3>BERLIN</h3>
-     
-        <div class="city-info">
-            <div class="info-row">
-                <ion-icon name="person"></ion-icon>
-                <div>2300+ happy eaters</div>
-            </div>
-
-            <div class="info-row">
-                <ion-icon name="star"></ion-icon>
-                <div>110+ top chefs</div>
-            </div>
-
-            <div class="info-row">
-                <ion-icon name="logo-twitter"></ion-icon>
-                <a href="#">@omnifood_1x</a>
-            </div>
-        </div>     
-    </div>
-
-
-            <div class="city">
-             <img src="Omnifood Contents/london.jpg">
-            <h3>LONDON</h3>
-       
-        <div class="city-info">
-            <div class="info-row">
-                <ion-icon name="person"></ion-icon>
-                <div>1200+ happy eaters</div>
-            </div>
-
-            <div class="info-row">
-                <ion-icon name="star"></ion-icon>
-                <div>50+ top chefs</div>
-            </div>
-
-            <div class="info-row">
-                <ion-icon name="logo-twitter"></ion-icon>
-                <a href="#">@omnifood_1x</a>
+                    <div class="info-row">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <a href="#">@omnifood_1x</a>
+                    </div>
                 </div>
             </div>
-        </div>     
-    </div>
-</section>
-     
-      
-          <section class="test">
-    <div class="image-container">
-        
-        <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
-        <div class="orange"></div>
 
-        <div class="testimonies">
+            <div class="city">
+                <img src="Omnifood Contents/san-francisco.jpg">
+                <h3>SAN FRANCISCO</h3>
 
-        <div class="test1">
-        
-        <blockquote>
-            Omnifood is just awesome! I just launched a startup 
-            which leabed me with no time for cooking, so Omnifood 
-            is a life-saver. Now that i got used to it, I couldnt 
-            live without my daily meals
-        </blockquote>
-        <cite>
-            <img class="turk" src="Omnifood Contents/customer-1.jpg" alt="">
-            Alberto Dunan
-        </cite>
+                <div class="city-info">
+                    <div class="info-row">
+                        <ion-icon name="person"></ion-icon>
+                        <div>3700+ happy eaters</div>
+                    </div>
 
+                    <div class="info-row">
+                        <ion-icon name="star"></ion-icon>
+                        <div>160+ top chefs</div>
+                    </div>
+
+                    <div class="info-row">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <a href="#">@omnifood_1x</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="city">
+                <img src="Omnifood Contents/berlin.jpg">
+                <h3>BERLIN</h3>
+
+                <div class="city-info">
+                    <div class="info-row">
+                        <ion-icon name="person"></ion-icon>
+                        <div>2300+ happy eaters</div>
+                    </div>
+
+                    <div class="info-row">
+                        <ion-icon name="star"></ion-icon>
+                        <div>110+ top chefs</div>
+                    </div>
+
+                    <div class="info-row">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <a href="#">@omnifood_1x</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="city">
+                <img src="Omnifood Contents/london.jpg">
+                <h3>LONDON</h3>
+
+                <div class="city-info">
+                    <div class="info-row">
+                        <ion-icon name="person"></ion-icon>
+                        <div>1200+ happy eaters</div>
+                    </div>
+
+                    <div class="info-row">
+                        <ion-icon name="star"></ion-icon>
+                        <div>50+ top chefs</div>
+                    </div>
+
+                    <div class="info-row">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <a href="#">@omnifood_1x</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="test2">
-        
-        <blockquote>
-            Inexpensive, healthy and great-tasting meals, 
-            delivered right to my home. We have lots of 
-            food delivery here in Lisbon, but no one 
-            comes even close to omifood. Me and my 
-            family are so in love!
-        </blockquote>
-        <cite>
-            <img class="turk" 
-            src="Omnifood Contents/customer-2.jpg"
-            alt="">
-            Joana Silva
-        </cite>
 
+    <section class="test">
+        <div class="image-container">
+
+            <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
+            <div class="orange"></div>
+
+            <div class="testimonies">
+
+                <div class="test1">
+
+                    <blockquote>
+                        Omnifood is just awesome! I just launched a startup
+                        which leabed me with no time for cooking, so Omnifood
+                        is a life-saver. Now that i got used to it, I couldnt
+                        live without my daily meals
+                    </blockquote>
+                    <cite>
+                        <img class="turk" src="Omnifood Contents/customer-1.jpg" alt="">
+                        Alberto Dunan
+                    </cite>
+
+                </div>
+
+                <div class="test2">
+
+                    <blockquote>
+                        Inexpensive, healthy and great-tasting meals,
+                        delivered right to my home. We have lots of
+                        food delivery here in Lisbon, but no one
+                        comes even close to omifood. Me and my
+                        family are so in love!
+                    </blockquote>
+                    <cite>
+                        <img class="turk" src="Omnifood Contents/customer-2.jpg" alt="">
+                        Joana Silva
+                    </cite>
+
+                </div>
+
+                <div class="test3">
+
+                    <blockquote>
+                        I was looking for a quick and easy food
+                        delivery service in San Franciso. I tried a lot
+                        of them and ended up with Omnifood. Best
+                        food delivery service in the Bay Area. Keep
+                        up the great work!
+                    </blockquote>
+                    <cite>
+                        <img class="turk" src="Omnifood Contents/customer-3.jpg" alt="">
+                        Milton Chapman
+                    </cite>
+
+                </div>
+
+            </div>
         </div>
-
-        <div class="test3">
-        
-        <blockquote>
-            I was looking for a quick and easy food 
-            delivery service in San Franciso. I tried a lot 
-            of them and ended up with Omnifood. Best
-            food delivery service in the Bay Area. Keep
-            up the great work!
-        </blockquote>
-        <cite>
-            <img class="turk" src="Omnifood Contents/customer-3.jpg" alt="">
-            Milton Chapman
-        </cite>
-
-        </div>
-        
-        </div>
-    </div>
     </section>
 
     <section class="sign">
         <div class="bg">
             <div class="ik">
-            <h2 class="swag1">START EATING HEALTHY TODAY</h2>
-            <div class="orange"></div>
+                <h2 class="swag1">START EATING HEALTHY TODAY</h2>
+                <div class="orange"></div>
             </div>
 
-    <div class="options">
-        <div class="option1">
-        <h3>PREMIUM</h3>
+            <div class="options">
+                <div class="option1">
+                    <h3>PREMIUM</h3>
 
-        <div class="price">
-        <h1 class="num">$399</h1> 
-        <p class="month"> /month</p>
-        </div>
+                    <div class="price">
+                        <h1 class="num">$399</h1>
+                        <p class="month"> /month</p>
+                    </div>
 
-        <p class="only">That's only 13.30$ per meal</p>
-        <div class="line"></div>
+                    <p class="only">That's only 13.30$ per meal</p>
+                    <div class="line"></div>
 
-        <li><span class="checkmark">✓</span>1 meal every day</li>
-        <li><span class="checkmark">✓</span>Order 24/7</li>
-        <li><span class="checkmark">✓</span> Access to newest creations</li>
-        <li><span class="checkmark">✓</span>Free delivery</li>
-        <div class="line"></div>
+                    <ul>
+                        <li><span class="checkmark">✓</span>1 meal every day</li>
+                        <li><span class="checkmark">✓</span>Order 24/7</li>
+                        <li><span class="checkmark">✓</span> Access to newest creations</li>
+                        <li><span class="checkmark">✓</span>Free delivery</li>
+                    </ul>
+                    <div class="line"></div>
 
-        <a href="#" class="signup">Sign up now</a>
-        </div>
+                    <a href="#" class="signup">Sign up now</a>
+                </div>
 
-        <div class="option2">
-        <h3>PRO</h3>
+                <div class="option2">
+                    <h3>PRO</h3>
 
-        <div class="price">
-        <h1 class="num">$149</h1> 
-        <p class="month"> /month</p>
-        </div>
+                    <div class="price">
+                        <h1 class="num">$149</h1>
+                        <p class="month"> /month</p>
+                    </div>
 
-        <p class="only">That's only 14.90 per meal</p>
-        <div class="line"></div>
+                    <p class="only">That's only 14.90 per meal</p>
+                    <div class="line"></div>
 
-        <li><span class="checkmark">✓</span>1 meal 10 days/month</li>
-        <li><span class="checkmark">✓</span>Order 24/7</li>
-        <li><span class="checkmark">✓</span> Access to newest creations</li>
-        <li><span class="checkmark">✓</span>Free delivery</li>
-        <div class="line"></div>
+                    <ul>
+                        <li><span class="checkmark">✓</span>1 meal 10 days/month</li>
+                        <li><span class="checkmark">✓</span>Order 24/7</li>
+                        <li><span class="checkmark">✓</span> Access to newest creations</li>
+                        <li><span class="checkmark">✓</span>Free delivery</li>
+                    </ul>
 
-        <a href="#" class="signup">Sign up now</a>
+                    <div class="line"></div>
 
-        </div>
+                    <a href="#" class="signup">Sign up now</a>
 
-        <div class="option3">  
-        <h3>STARTER</h3>
+                </div>
 
-        <div class="price">
-        <h1 class="num">$19</h1> 
-        <p class="month"> /meal</p>
-        </div>
-        <p class="only"> </p>
-        <div class="line"></div>
+                <div class="option3">
+                    <h3>STARTER</h3>
 
-        <li><span class="checkmark">✓</span>1 meal</li>
-        <li><span class="checkmark">✓</span>Order 24/7</li>
-        <li><span class="checkmark">X</span></li>
-        <li><span class="checkmark">✓</span>Free delivery</li>
-        <div class="line"></div>
+                    <div class="price">
+                        <h1 class="num">$19</h1>
+                        <p class="month"> /meal</p>
+                    </div>
+                    <p class="only"> </p>
+                    <div class="line"></div>
 
-        <a href="#" class="signup">Sign up now</a>
+                    <ul>
+                        <li><span class="checkmark">✓</span>1 meal</li>
+                        <li><span class="checkmark">✓</span>Order 24/7</li>
+                        <li><span class="checkmark">X</span></li>
+                        <li><span class="checkmark">✓</span>Free delivery</li>
+                    </ul>
 
-        </div>
+                    <div class="line"></div>
+
+                    <div>
+                        <a href="#" class="signup">Sign up now</a>
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
     </section>
-    <footer class ="footer"></footer>
+
+    <section class="contact">
+        <h2>We're happy to hear from you</h2>
+
+        <div class="orange-line"></div>
+
+        <div class="form">
+
+
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+
+
+            <label>Email</label>
+            <input type="email" placeholder="Your email">
+
+            <label>How did you find us?</label>
+            <select>
+                <option>Freinds</option>
+            </select>
+
+            <label>Newsletter?</label>
+            <div>
+                <input type="checkbox" checked> Yes,please
+            </div>
+
+            <label>Drop us a line</label>
+            <textarea placeholder="Your message"></textarea>
+
+            <span></span>
+            <button type="button">Send it!</button>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="row">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+
+                Copyright © 2026 by Omnifood. All rights reserved.
+            </p>
+        </div>
     </footer>
 
-  
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
